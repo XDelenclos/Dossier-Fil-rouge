@@ -144,32 +144,26 @@ namespace PL
         {
             string pattern = "^[A-Za-z]+$";
             if (Regex.IsMatch(TxtBoxNom.Text, pattern))
-            {
                 flagNom = true;
-            }
-            else
-            { flagNom = false; }
+                        
+             flagNom = false; 
 
         }
         private void TxtBoxEnseigne_Validating(object sender, CancelEventArgs e)
         {
             string pattern = "^[A-Za-z0-9]+$";
             if (Regex.IsMatch(TxtBoxEnseigne.Text, pattern))
-            {
                 flagEnseigne = true;
-            }
-            else
-            { flagEnseigne = false; }
+            
+            flagEnseigne = false; 
         }
         private void TxtBoxNumClient_Validating(object sender, CancelEventArgs e)
         {
             string pattern = "^[0-9]+$";
             if (Regex.IsMatch(TxtBoxNumClient.Text, pattern))
-            {
                 flagNum = true;
-            }
-            else
-            { flagNum = false; }
+            
+            flagNum = false; 
         }
 
         private void button3_Click(object sender, EventArgs e)
